@@ -17,20 +17,20 @@ import java.util.List;
  * desc   : 底部菜单自定义view
  */
 
-public class BottombarView extends LinearLayout {
+public class BottomBarView extends LinearLayout {
 
     private Context mContext;
     private RecyclerView rvBottombar;
     private BottombarAdapter bottombarAdapter;
     private GridLayoutManager gridLayoutManager;
 
-    public BottombarView(Context context) {
+    public BottomBarView(Context context) {
         super(context);
         mContext = context;
         initView();
     }
 
-    public BottombarView(Context context, @Nullable AttributeSet attrs) {
+    public BottomBarView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
         initView();
@@ -51,7 +51,8 @@ public class BottombarView extends LinearLayout {
 
 
     /**
-     * 设置底部菜单数据
+     * 设置底部菜单数据 （选中图片、非选中图片、文字、未读数量）
+     *
      * @param list 数据
      */
     public void setData(List<BottomBean> list) {
