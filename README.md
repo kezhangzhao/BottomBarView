@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white" />
-# 2、创建底部导航栏资源：
+# 2、创建底部导航栏资源：（这里是项目自带的图片资源，不一样的可以更换）
     private List<BottomBean> getMeanData() {
         List<BottomBean> listBean = new ArrayList<>();
         BottomBean bottomBean1 = new BottomBean();
@@ -59,3 +59,5 @@
             }
         });
  
+# 图片
+![](https://github.com/kezhangzhao/BottomBarView/raw/master/screenshot/1.png)  
