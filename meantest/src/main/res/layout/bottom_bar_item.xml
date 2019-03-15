@@ -24,17 +24,17 @@
             android:paddingBottom="1dp"
             android:src="@drawable/bottom_news_gray" />
 
-        <com.bit.elevator.view.TextViewSize
+        <TextView
             android:id="@+id/tv_unread_num"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="@dimen/dim_2dp"
+            android:layout_marginTop="2dp"
             android:layout_alignEnd="@+id/iv_picture"
             android:background="@drawable/circle_red_unread_8dp"
             android:gravity="center"
             android:includeFontPadding="false"
             android:textColor="@color/white"
-            android:textSize="@dimen/text_zoom_10sp"
+            android:textSize="10sp"
             tools:text="···" />
     </RelativeLayout>
 
