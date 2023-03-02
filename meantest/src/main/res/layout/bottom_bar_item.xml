@@ -4,7 +4,6 @@
     android:id="@+id/ll_item_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -21,8 +20,7 @@
             android:paddingStart="8dp"
             android:paddingTop="5dp"
             android:paddingEnd="8dp"
-            android:paddingBottom="1dp"
-            android:src="@drawable/bottom_news_gray" />
+            android:paddingBottom="1dp" />
 
         <TextView
             android:id="@+id/tv_unread_num"

@@ -20,11 +20,11 @@ import java.util.List;
  * desc   : 自定义底部菜单
  */
 
-public class BottombarAdapter extends RecyclerView.Adapter {
+public class BottomBarAdapter extends RecyclerView.Adapter {
 
     private Context mContext;
     private LayoutInflater inflater ;
-    private List<BottomBean> listBean;
+    private List<BottomBean> listBean= new ArrayList<>();
     private int selectPosition=0;
     private OnMyItemClickListener listener;//item点击事件监听
     private int selectTextColor = R.color.theme;
@@ -32,35 +32,12 @@ public class BottombarAdapter extends RecyclerView.Adapter {
     private int unReadNumTextColor = R.color.white;
     private int unReadNumBackground= R.drawable.circle_red_unread_8dp;
 
-    BottombarAdapter(Context context) {
+    BottomBarAdapter(Context context) {
         this.mContext = context;
         this.inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        createDefaultData();
     }
 
-    private void createDefaultData(){
-        listBean = new ArrayList<>();
-        BottomBean bottomBean1 = new BottomBean();
-        bottomBean1.setIvSelectID(R.drawable.bottom_news_orange);
-        bottomBean1.setIvUnSelectID(R.drawable.bottom_news_gray);
-        bottomBean1.setBottomText("消息");
-        listBean.add(bottomBean1);
-        BottomBean bottomBean2 = new BottomBean();
-        bottomBean2.setIvSelectID(R.drawable.bottom_contact_orange);
-        bottomBean2.setIvUnSelectID(R.drawable.bottom_contact_gray);
-        bottomBean2.setBottomText("通讯录");
-        listBean.add(bottomBean2);
-        BottomBean bottomBean3 = new BottomBean();
-        bottomBean3.setIvSelectID(R.drawable.bottom_work_orange);
-        bottomBean3.setIvUnSelectID(R.drawable.bottom_work_gray);
-        bottomBean3.setBottomText("工作");
-        listBean.add(bottomBean3);
-        BottomBean bottomBean4 = new BottomBean();
-        bottomBean4.setIvSelectID(R.drawable.bottom_personal_orange);
-        bottomBean4.setIvUnSelectID(R.drawable.bottom_personal_gray);
-        bottomBean4.setBottomText("我的");
-        listBean.add(bottomBean4);
-    }
+
 
     /**
      * 设置底部菜单数据

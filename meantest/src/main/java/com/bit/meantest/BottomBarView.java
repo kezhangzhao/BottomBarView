@@ -21,7 +21,7 @@ public class BottomBarView extends LinearLayout {
 
     private Context mContext;
     private RecyclerView rvBottombar;
-    private BottombarAdapter bottombarAdapter;
+    private BottomBarAdapter bottombarAdapter;
     private GridLayoutManager gridLayoutManager;
 
     public BottomBarView(Context context) {
@@ -44,7 +44,7 @@ public class BottomBarView extends LinearLayout {
         rvBottombar = findViewById(R.id.rv_bottom_bar);
         gridLayoutManager = new GridLayoutManager(mContext, 4);
         rvBottombar.setLayoutManager(gridLayoutManager);
-        bottombarAdapter = new BottombarAdapter(mContext);
+        bottombarAdapter = new BottomBarAdapter(mContext);
         rvBottombar.setAdapter(bottombarAdapter);
         rvBottombar.setItemAnimator(new DefaultItemAnimator());
     }
@@ -67,7 +67,7 @@ public class BottomBarView extends LinearLayout {
      *
      * @param listener OnMyItemClickListener
      */
-    public void setOnMyItemClickListener(BottombarAdapter.OnMyItemClickListener listener) {
+    public void setOnMyItemClickListener(BottomBarAdapter.OnMyItemClickListener listener) {
         bottombarAdapter.setOnMyItemClickListener(listener);
     }
 
@@ -124,5 +124,14 @@ public class BottomBarView extends LinearLayout {
      */
     public void setUnReadNumBackground(int background) {
         bottombarAdapter.setUnReadNumBackground(background);
+    }
+
+    /**
+     * 设置背景颜色
+     *
+     * @param background 背景资源
+     */
+    public void setViewBackgroundResource(int background) {
+        setBackgroundResource(background);
     }
 }
