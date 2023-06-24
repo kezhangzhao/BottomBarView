@@ -1,6 +1,6 @@
 package com.bit.test2;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 import com.bit.meantest.BottomBarView;
@@ -8,6 +8,8 @@ import com.bit.meantest.BottomBean;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
